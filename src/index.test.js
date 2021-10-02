@@ -1,10 +1,17 @@
-import palindrome from "./index.js";
+import { palindrome } from "./index.js";
 
 describe("Given palindrome function", () => {
+  describe("when no characters is passed as param", () => {
+    it("should throw an error", () => {
+      expect(() => palindrome()).toThrow("Insira dados válidos!");
+      expect(() => palindrome("")).toThrow("Insira dados válidos!");
+    });
+  });
+
   describe("when is a palindrome word", () => {
     describe("when all characters are in lower case", () => {
       it("should return true for “madam”", () => {
-        expect(palindrome("madam")).toBeTruthy();
+        expect(() => palindrome("madam")).toBeTruthy();
       });
 
       it("should return true for “bob”", () => {
@@ -41,7 +48,7 @@ describe("Given palindrome function", () => {
     });
   });
 
-  describe("when is a palindrome number", () => {
+  describe("when is a palindrome string of numbers", () => {
     it("should return true for “1”", () => {
       expect(palindrome("1")).toBeTruthy();
     });
