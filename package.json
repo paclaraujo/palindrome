@@ -1,0 +1,25 @@
+{
+  "name": "palindrome",
+  "version": "1.0.0",
+  "description": "Valida se uma frase ou palavra é um [palíndromo](https://en.wikipedia.org/wiki/Palindrome).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paclaraujo/palindrome.git"
+  },
+  "keywords": [
+    "palindrome"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paclaraujo/palindrome/issues"
+  },
+  "homepage": "https://github.com/paclaraujo/palindrome#readme",
+  "dependencies": {
+    "jest": "^27.2.4"
+  }
+}
